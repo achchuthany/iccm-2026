@@ -19,16 +19,16 @@ const About = () => {
             knowledge, and digital transformation for sustainability.
           </p>
           <div className="grid md:grid-cols-3 gap-8 mt-12">
-            <div className="text-center p-6 bg-blue-50 dark:bg-gray-800 rounded-lg">
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">9th</div>
+            <div className="text-center p-6 bg-primary/10 dark:bg-gray-800 rounded-lg">
+              <div className="text-4xl font-bold text-primary dark:text-primary mb-2">9th</div>
               <div className="text-gray-700 dark:text-gray-300">Edition</div>
             </div>
-            <div className="text-center p-6 bg-blue-50 dark:bg-gray-800 rounded-lg">
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">3-4 June</div>
+            <div className="text-center p-6 bg-primary/10 dark:bg-gray-800 rounded-lg">
+              <div className="text-4xl font-bold text-primary dark:text-primary mb-2">3-4 June</div>
               <div className="text-gray-700 dark:text-gray-300">2026</div>
             </div>
-            <div className="text-center p-6 bg-blue-50 dark:bg-gray-800 rounded-lg">
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">Jaffna</div>
+            <div className="text-center p-6 bg-primary/10 dark:bg-gray-800 rounded-lg">
+              <div className="text-4xl font-bold text-primary dark:text-primary mb-2">Jaffna</div>
               <div className="text-gray-700 dark:text-gray-300">Sri Lanka</div>
             </div>
           </div>

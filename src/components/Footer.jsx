@@ -15,7 +15,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#home"
-                  className="hover:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                  className="hover:text-primary dark:hover:text-primary transition-colors"
                 >
                   Home
                 </a>
@@ -23,7 +23,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#about"
-                  className="hover:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                  className="hover:text-primary dark:hover:text-primary transition-colors"
                 >
                   About
                 </a>
@@ -31,7 +31,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#call-for-papers"
-                  className="hover:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                  className="hover:text-primary dark:hover:text-primary transition-colors"
                 >
                   Call for Papers
                 </a>
@@ -39,7 +39,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#registration"
-                  className="hover:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                  className="hover:text-primary dark:hover:text-primary transition-colors"
                 >
                   Registration
                 </a>
@@ -52,7 +52,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#important-dates"
-                  className="hover:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                  className="hover:text-primary dark:hover:text-primary transition-colors"
                 >
                   Important Dates
                 </a>
@@ -60,7 +60,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#committees"
-                  className="hover:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                  className="hover:text-primary dark:hover:text-primary transition-colors"
                 >
                   Committees
                 </a>
@@ -68,7 +68,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#venue"
-                  className="hover:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                  className="hover:text-primary dark:hover:text-primary transition-colors"
                 >
                   Venue
                 </a>
@@ -76,7 +76,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#contact"
-                  className="hover:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                  className="hover:text-primary dark:hover:text-primary transition-colors"
                 >
                   Contact
                 </a>
@@ -95,7 +95,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 dark:border-gray-900 pt-8 text-gray-400 dark:text-gray-500">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 text-center md:text-left">
             <p className="text-xs">Copyrights © 2024 All Rights Reserved by Faculty of Management Studies and Commerce, University of Jaffna.</p>
-            <p className="text-xs text-gray-500 whitespace-nowrap">Designed by <a href="https://www.achchuthan.lk" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">Y. Achchuthan</a></p>
+            <p className="text-xs text-gray-500 whitespace-nowrap">Designed by <a href="https://www.achchuthan.lk" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary transition-colors">Y. Achchuthan</a></p>
           </div>
         </div>
       </div>

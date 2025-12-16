@@ -6,7 +6,7 @@ const Theme = () => {
           Conference Theme
         </h2>
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-6">
+          <h3 className="text-2xl font-semibold text-primary dark:text-primary mb-6">
             "Shaping Regions for Resilience, Inclusion, and Sustainability"
           </h3>
           <p className="text-gray-700 dark:text-gray-300 text-lg mb-6">
