@@ -17,7 +17,7 @@ const Sponsors = () => {
               Academic Partner
             </h3>
             <div className="flex justify-center">
-              <div className="bg-gradient-to-br from-green-100 to-green-200 dark:from-green-900 dark:to-green-800 rounded-lg p-12 shadow-lg max-w-md">
+              <div className="bg-gradient-to-br from-primary/20 to-secondary/20 dark:from-primary/30 dark:to-secondary/30 rounded-lg p-12 shadow-lg max-w-md">
                 <p className="text-2xl font-bold text-center text-gray-900 dark:text-white">
                   Emerald Publishing
                 </p>

@@ -57,8 +57,8 @@ const Programme = () => {
           </div>
 
           {/* Panel Discussion Details */}
-          <div className="bg-green-50 dark:bg-gray-800 rounded-lg p-8 mb-8">
-            <h3 className="text-2xl font-bold text-green-600 dark:text-green-400 mb-4">
+          <div className="bg-secondary/10 dark:bg-gray-800 rounded-lg p-8 mb-8">
+            <h3 className="text-2xl font-bold text-secondary dark:text-secondary mb-4">
               Panel Discussion
             </h3>
             <p className="text-xl text-gray-700 dark:text-gray-300 mb-6 italic">

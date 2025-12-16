@@ -110,19 +110,19 @@ const Committees = () => {
             <div className="space-y-8">
               {/* Editor-in-Chief and Managing Editor */}
               <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-                <div className="p-6 bg-green-50 dark:bg-green-900 rounded-lg shadow-md text-center">
+                <div className="p-6 bg-secondary/10 dark:bg-secondary/30 rounded-lg shadow-md text-center">
                   <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                     {committees.editorial.chief.name}
                   </h4>
-                  <p className="text-green-600 dark:text-green-400 font-medium">
+                  <p className="text-secondary dark:text-secondary font-medium">
                     {committees.editorial.chief.role}
                   </p>
                 </div>
-                <div className="p-6 bg-green-50 dark:bg-green-900 rounded-lg shadow-md text-center">
+                <div className="p-6 bg-secondary/10 dark:bg-secondary/30 rounded-lg shadow-md text-center">
                   <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                     {committees.editorial.managing.name}
                   </h4>
-                  <p className="text-green-600 dark:text-green-400 font-medium">
+                  <p className="text-secondary dark:text-secondary font-medium">
                     {committees.editorial.managing.role}
                   </p>
                 </div>
