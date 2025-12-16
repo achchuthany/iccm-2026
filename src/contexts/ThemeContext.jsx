@@ -36,7 +36,10 @@ export function ThemeProvider({ children }) {
       const saved = localStorage.getItem("theme");
       const userManuallySet = localStorage.getItem("theme-manually-set");
       
-      // Don't override if user has explicitly chosen a theme
+      // System preference only applies when:
+      // 1. User hasn't manually toggled the theme, AND
+      // 2. No theme is saved (brand new user or cleared storage)
+      // This preserves both manual choices and previously saved themes
       if (!userManuallySet && (saved === null || saved === "")) {
         setTheme(event.matches ? "dark" : "light");
       }
