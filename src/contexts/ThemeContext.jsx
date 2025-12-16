@@ -40,7 +40,7 @@ export function ThemeProvider({ children }) {
       // 1. User hasn't manually toggled the theme, AND
       // 2. No theme is saved (brand new user or cleared storage)
       // This preserves both manual choices and previously saved themes
-      if (!userManuallySet && (saved === null || saved === "")) {
+      if (userManuallySet !== "true" && !saved) {
         setTheme(event.matches ? "dark" : "light");
       }
     };
