@@ -20,7 +20,7 @@ const Home = () => {
       className="relative overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-primary/10 via-white to-secondary/10 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 pt-16"
     >
       <div
-        className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_20%_20%,#60a5fa,transparent_25%),radial-gradient(circle_at_80%_0%,#a855f7,transparent_20%),radial-gradient(circle_at_50%_80%,#22c55e,transparent_20%)]"
+        className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_20%_20%,#C41E3A,transparent_25%),radial-gradient(circle_at_80%_0%,#800020,transparent_20%),radial-gradient(circle_at_50%_80%,#C41E3A,transparent_20%)]"
         aria-hidden="true"
       />
 
@@ -56,7 +56,7 @@ const Home = () => {
 
             <div className="flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-300">
               <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/80 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
-                <span className="h-2 w-2 rounded-full bg-emerald-500" /> Hybrid
+                <span className="h-2 w-2 rounded-full bg-secondary" /> Hybrid
                 experience
               </span>
               <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/80 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
@@ -64,7 +64,7 @@ const Home = () => {
                 keynotes & workshops
               </span>
               <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/80 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
-                <span className="h-2 w-2 rounded-full bg-amber-500" />{" "}
+                <span className="h-2 w-2 rounded-full bg-primary" />{" "}
                 Networking & mentoring
               </span>
             </div>
@@ -116,12 +116,12 @@ const Home = () => {
                     Distinguished keynotes and practitioner panels
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1 h-2 w-2 rounded-full bg-emerald-500" />{" "}
+                    <span className="mt-1 h-2 w-2 rounded-full bg-secondary" />{" "}
                     Tracks on innovation, sustainability, and digital
                     transformation
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-1 h-2 w-2 rounded-full bg-amber-500" />{" "}
+                    <span className="mt-1 h-2 w-2 rounded-full bg-primary" />{" "}
                     Publication opportunities and awards for best papers
                   </li>
                 </ul>
