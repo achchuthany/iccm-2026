@@ -25,13 +25,13 @@ const ImportantDates = () => {
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 sm:mb-0">
                   {item.event}
                 </h3>
-                <span className="text-blue-600 dark:text-blue-400 font-semibold">
+                <span className="text-primary dark:text-primary font-semibold">
                   {item.date}
                 </span>
               </div>
             ))}
           </div>
-          <div className="mt-8 p-6 bg-blue-50 dark:bg-gray-900 rounded-lg">
+          <div className="mt-8 p-6 bg-primary/10 dark:bg-gray-900 rounded-lg">
             <p className="text-gray-700 dark:text-gray-300 text-center">
               <strong>Note:</strong> Full Papers/Extended Abstracts submissions will be managed via Microsoft CMT. 
               Please ensure all deadlines are met for your submission to be considered.

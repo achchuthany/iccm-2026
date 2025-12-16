@@ -10,10 +10,17 @@
   }
 
   body {
-    @apply antialiased bg-white text-gray-800 transition-colors duration-300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1f2937; /* gray-800 */
+    transition-property: color, background-color;
+    transition-duration: 300ms;
   }
 
   .dark body {
-    @apply bg-slate-950 text-gray-200;
+    background-color: #0f172a; /* slate-950 */
+    color: #e5e7eb; /* gray-200 */
   }
 }

@@ -12,43 +12,43 @@ const Programme = () => {
           </p>
 
           {/* Special Features */}
-          <div className="bg-blue-50 dark:bg-gray-800 rounded-lg p-8 mb-8">
-            <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-6">
+          <div className="bg-primary/10 dark:bg-gray-800 rounded-lg p-8 mb-8">
+            <h3 className="text-2xl font-bold text-primary dark:text-primary mb-6">
               Special Features
             </h3>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="flex items-start">
-                <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-primary dark:text-primary mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-gray-700 dark:text-gray-300">Technical Sessions</span>
               </div>
               <div className="flex items-start">
-                <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-primary dark:text-primary mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-gray-700 dark:text-gray-300">Panel Discussion</span>
               </div>
               <div className="flex items-start">
-                <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-primary dark:text-primary mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-gray-700 dark:text-gray-300">Doctoral Colloquium</span>
               </div>
               <div className="flex items-start">
-                <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-primary dark:text-primary mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-gray-700 dark:text-gray-300">Undergraduate Poster Presentation</span>
               </div>
               <div className="flex items-start">
-                <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-primary dark:text-primary mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-gray-700 dark:text-gray-300">Quality Research Network Meetings</span>
               </div>
               <div className="flex items-start">
-                <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-primary dark:text-primary mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-gray-700 dark:text-gray-300">Special Interest Group Meetings</span>
@@ -84,12 +84,12 @@ const Programme = () => {
           <div className="space-y-8">
             {/* Day 1 - Wednesday, 03 June 2026 */}
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
-              <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-6">
+              <h3 className="text-2xl font-bold text-primary dark:text-primary mb-6">
                 Wednesday, 03 June 2026
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-primary dark:text-primary mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <div>
@@ -97,7 +97,7 @@ const Programme = () => {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-primary dark:text-primary mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <div>
@@ -105,7 +105,7 @@ const Programme = () => {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-primary dark:text-primary mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <div>
@@ -113,7 +113,7 @@ const Programme = () => {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-primary dark:text-primary mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <div>
@@ -125,12 +125,12 @@ const Programme = () => {
 
             {/* Day 2 - Thursday, 04 June 2026 */}
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
-              <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-6">
+              <h3 className="text-2xl font-bold text-primary dark:text-primary mb-6">
                 Thursday, 04 June 2026
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-primary dark:text-primary mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <div>
@@ -139,7 +139,7 @@ const Programme = () => {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-primary dark:text-primary mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <div>
@@ -147,7 +147,7 @@ const Programme = () => {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-primary dark:text-primary mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <div>
@@ -159,12 +159,12 @@ const Programme = () => {
 
             {/* Day 3 - Friday, 05 June 2026 */}
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
-              <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-6">
+              <h3 className="text-2xl font-bold text-primary dark:text-primary mb-6">
                 Friday, 05 June 2026
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-primary dark:text-primary mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <div>
@@ -179,7 +179,7 @@ const Programme = () => {
             </div>
           </div>
 
-          <div className="mt-8 p-6 bg-blue-50 dark:bg-gray-800 rounded-lg">
+          <div className="mt-8 p-6 bg-primary/10 dark:bg-gray-800 rounded-lg">
             <p className="text-gray-700 dark:text-gray-300 text-center">
               <strong>Note:</strong> This is a tentative schedule. The final programme with detailed 
               session information will be published after paper acceptance.

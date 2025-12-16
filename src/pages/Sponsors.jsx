@@ -56,7 +56,7 @@ const Sponsors = () => {
           </div>
 
           {/* Sponsorship Opportunities */}
-          <div className="bg-blue-50 dark:bg-gray-800 rounded-lg p-8 text-center">
+          <div className="bg-primary/10 dark:bg-gray-800 rounded-lg p-8 text-center">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
               Become a Sponsor
             </h3>
@@ -66,7 +66,7 @@ const Sponsors = () => {
             </p>
             <a
               href="#contact"
-              className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors"
+              className="inline-block px-8 py-4 bg-primary hover:bg-secondary text-white font-semibold rounded-lg shadow-lg transition-colors"
             >
               Sponsorship Inquiry
             </a>

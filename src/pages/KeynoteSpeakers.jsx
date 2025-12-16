@@ -26,7 +26,7 @@ const KeynoteSpeakers = () => {
               key={index}
               className="p-8 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg text-center"
             >
-              <div className="w-32 h-32 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <div className="w-32 h-32 bg-gradient-to-br from-primary to-secondary rounded-full mx-auto mb-6 flex items-center justify-center">
                 <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                 </svg>
@@ -34,7 +34,7 @@ const KeynoteSpeakers = () => {
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
                 {speaker.name}
               </h3>
-              <p className="text-blue-600 dark:text-blue-400 font-semibold mb-2">
+              <p className="text-primary dark:text-primary font-semibold mb-2">
                 {speaker.title}
               </p>
               <p className="text-gray-600 dark:text-gray-400 mb-4">

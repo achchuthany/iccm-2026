@@ -50,11 +50,11 @@ const Committees = () => {
               General Chair
             </h3>
             <div className="max-w-md mx-auto">
-              <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900 dark:to-blue-800 rounded-lg shadow-lg text-center">
+              <div className="p-6 bg-gradient-to-br from-primary/10 to-secondary/10 dark:from-primary dark:to-secondary rounded-lg shadow-lg text-center">
                 <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                   {committees.general[0].name}
                 </h4>
-                <p className="text-blue-600 dark:text-blue-400 font-medium">
+                <p className="text-primary dark:text-primary font-medium">
                   {committees.general[0].role}
                 </p>
               </div>
@@ -94,7 +94,7 @@ const Committees = () => {
                   <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                     {member.name}
                   </h4>
-                  <p className="text-blue-600 dark:text-blue-400 font-medium">
+                  <p className="text-primary dark:text-primary font-medium">
                     {member.role}
                   </p>
                 </div>

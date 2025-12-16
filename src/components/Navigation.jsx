@@ -39,7 +39,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-blue-600 dark:text-blue-400">
+            <h1 className="text-xl font-bold text-primary dark:text-primary">
               ICCM 2026
             </h1>
           </div>
@@ -50,7 +50,7 @@ const Navigation = () => {
               <button
                 key={section.id}
                 onClick={() => scrollToSection(section.id)}
-                className="px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
               >
                 {section.label}
               </button>
@@ -59,7 +59,7 @@ const Navigation = () => {
             <div className="relative">
               <button
                 onClick={() => setShowMore((prev) => !prev)}
-                className="px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
               >
                 More
               </button>
@@ -131,7 +131,7 @@ const Navigation = () => {
               <button
                 key={section.id}
                 onClick={() => scrollToSection(section.id)}
-                className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
+                className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
               >
                 {section.label}
               </button>
@@ -144,7 +144,7 @@ const Navigation = () => {
                 <button
                   key={section.id}
                   onClick={() => scrollToSection(section.id)}
-                  className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
+                  className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
                 >
                   {section.label}
                 </button>
