@@ -86,14 +86,17 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400 dark:text-gray-500">
-              <li>Email: info@iccm2026.org</li>
-              <li>Phone: TBA</li>
-              <li>Address: TBA</li>
+              <li>Email: iccm@maco.jfn.ac.lk</li>
+              <li>Phone: +94 21 222 3610</li>
+              <li>Jaffna, Sri Lanka</li>
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-800 dark:border-gray-900 pt-8 text-center text-gray-400 dark:text-gray-500">
-          <p>&copy; 2026 ICCM. All rights reserved.</p>
+        <div className="border-t border-gray-800 dark:border-gray-900 pt-8 text-gray-400 dark:text-gray-500">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 text-center md:text-left">
+            <p className="text-xs">Copyrights © 2024 All Rights Reserved by Faculty of Management Studies and Commerce, University of Jaffna.</p>
+            <p className="text-xs text-gray-500 whitespace-nowrap">Designed by <a href="https://www.achchuthan.lk" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">Y. Achchuthan</a></p>
+          </div>
         </div>
       </div>
     </footer>

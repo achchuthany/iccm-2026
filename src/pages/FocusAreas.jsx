@@ -1,16 +1,43 @@
 const FocusAreas = () => {
   const areas = [
     {
-      title: 'Strategic Management',
+      title: 'Accounting and Finance',
       topics: [
-        'Business Strategy and Planning',
-        'Competitive Analysis',
-        'Strategic Innovation',
-        'Corporate Governance',
+        'Corporate Finance',
+        'Financial Reporting and Accounting',
+        'Investment Management',
+        'Accounting in Emerging Economies',
       ],
     },
     {
-      title: 'Human Resource Management',
+      title: 'Marketing and Supply Chain Management',
+      topics: [
+        'Digital Marketing',
+        'Consumer Behavior',
+        'Supply Chain Optimization',
+        'Market Research and Analytics',
+      ],
+    },
+    {
+      title: 'Entrepreneurship and Innovation',
+      topics: [
+        'Startup Management',
+        'Business Model Innovation',
+        'Social Entrepreneurship',
+        'Innovation Ecosystem',
+      ],
+    },
+    {
+      title: 'Tourism, Hospitality and Events',
+      topics: [
+        'Sustainable Tourism',
+        'Hospitality Management',
+        'Event Management',
+        'Tourism Development',
+      ],
+    },
+    {
+      title: 'Human Resource Management and Organisational Studies',
       topics: [
         'Talent Management',
         'Organizational Behavior',
@@ -19,57 +46,39 @@ const FocusAreas = () => {
       ],
     },
     {
-      title: 'Marketing Management',
+      title: 'Business Technology and Digital Transformation',
       topics: [
-        'Digital Marketing',
-        'Consumer Behavior',
-        'Brand Management',
-        'Market Research',
-      ],
-    },
-    {
-      title: 'Operations Management',
-      topics: [
-        'Supply Chain Management',
-        'Quality Management',
-        'Project Management',
-        'Process Optimization',
-      ],
-    },
-    {
-      title: 'Financial Management',
-      topics: [
-        'Corporate Finance',
-        'Investment Management',
-        'Risk Management',
-        'Financial Planning',
-      ],
-    },
-    {
-      title: 'Information Systems',
-      topics: [
-        'Digital Transformation',
+        'Digital Transformation Strategy',
         'Business Intelligence',
         'IT Strategy',
-        'Cybersecurity',
+        'Cybersecurity Management',
       ],
     },
     {
-      title: 'Entrepreneurship & Innovation',
+      title: 'Humanities and Social Sciences',
       topics: [
-        'Startup Management',
-        'Business Model Innovation',
-        'Social Entrepreneurship',
-        'Technology Commercialization',
+        'Social Impact Studies',
+        'Cultural Management',
+        'Public Administration',
+        'Development Studies',
       ],
     },
     {
-      title: 'Sustainability & Ethics',
+      title: 'Sustainability, ESG and Corporate Governance',
       topics: [
+        'Environmental, Social, and Governance',
         'Corporate Social Responsibility',
-        'Environmental Management',
-        'Business Ethics',
-        'Sustainable Development',
+        'Sustainable Business Practices',
+        'Ethical Management',
+      ],
+    },
+    {
+      title: 'Economics, Public Policy and Regional Development',
+      topics: [
+        'Regional Economics',
+        'Public Policy Analysis',
+        'Economic Development',
+        'Policy and Governance',
       ],
     },
   ];

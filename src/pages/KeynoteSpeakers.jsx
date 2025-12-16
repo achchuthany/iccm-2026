@@ -1,16 +1,16 @@
 const KeynoteSpeakers = () => {
   const speakers = [
     {
-      name: 'TBA',
-      title: 'Keynote Speaker',
-      affiliation: 'To Be Announced',
-      topic: 'TBA',
+      name: 'Professor Kiridaran (Giri) Kanagaretnam',
+      title: 'Professor and Ron Binns Chair in Financial Reporting, Banking and Governance',
+      affiliation: 'Schulich School of Business, York University, Canada',
+      topic: 'Financial Reporting and Corporate Governance',
     },
     {
-      name: 'TBA',
-      title: 'Keynote Speaker',
-      affiliation: 'To Be Announced',
-      topic: 'TBA',
+      name: 'Professor Sunitha Narendran',
+      title: 'Professor of Business and Associate Pro Vice-Chancellor',
+      affiliation: 'University of Roehampton, London',
+      topic: 'Internationalisation and Global Engagement',
     },
   ];
 

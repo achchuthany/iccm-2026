@@ -1,9 +1,9 @@
 const stats = [
   { label: "Editions", value: "9th", detail: "Building on a decade of impact" },
   {
-    label: "Global Reach",
-    value: "30+ Countries",
-    detail: "Diverse, international delegates",
+    label: "Date",
+    value: "3-4 June 2026",
+    detail: "University of Jaffna, Sri Lanka",
   },
   {
     label: "Research",
@@ -34,9 +34,9 @@ const Home = () => {
               ICCM 2026
             </h1>
             <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-2xl">
-              Connecting scholars, industry leaders, and policymakers to shape
-              the future of contemporary management with innovative,
-              sustainable, and inclusive practices.
+              Shaping Regions for Resilience, Inclusion, and Sustainability.
+              Organised by the Faculty of Management Studies and Commerce,
+              University of Jaffna, Sri Lanka.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3">

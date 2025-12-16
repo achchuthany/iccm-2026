@@ -1,10 +1,12 @@
 const ImportantDates = () => {
   const dates = [
-    { event: 'Paper Submission Deadline', date: 'TBA' },
-    { event: 'Notification of Acceptance', date: 'TBA' },
-    { event: 'Early Bird Registration', date: 'TBA' },
-    { event: 'Camera-Ready Submission', date: 'TBA' },
-    { event: 'Conference Dates', date: 'TBA 2026' },
+    { event: 'Submission of Full Papers/Extended Abstracts', date: '15 February 2026' },
+    { event: 'Notification of Review Decision', date: '15 March 2026' },
+    { event: 'Submission of Revised Papers/Abstracts', date: '01 April 2026' },
+    { event: 'Final Notification Review Decision', date: '15 April 2026' },
+    { event: 'Camera Ready Copy Submission', date: '01 May 2026' },
+    { event: 'Registration Deadline', date: '20 May 2026' },
+    { event: 'Conference Dates', date: '3-4 June 2026' },
   ];
 
   return (
@@ -31,8 +33,8 @@ const ImportantDates = () => {
           </div>
           <div className="mt-8 p-6 bg-blue-50 dark:bg-gray-900 rounded-lg">
             <p className="text-gray-700 dark:text-gray-300 text-center">
-              <strong>Note:</strong> All dates and deadlines will be announced soon. 
-              Please check back regularly for updates.
+              <strong>Note:</strong> Full Papers/Extended Abstracts submissions will be managed via Microsoft CMT. 
+              Please ensure all deadlines are met for your submission to be considered.
             </p>
           </div>
         </div>

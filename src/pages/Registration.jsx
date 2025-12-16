@@ -1,28 +1,24 @@
 const Registration = () => {
   const fees = [
     {
-      category: 'Academic/Research',
-      early: 'TBA',
-      regular: 'TBA',
-      onsite: 'TBA',
+      category: 'National Delegates',
+      amount: 'Rs 5,000',
     },
     {
-      category: 'Student',
-      early: 'TBA',
-      regular: 'TBA',
-      onsite: 'TBA',
+      category: 'Delegates from Asian Countries',
+      amount: 'USD 50',
     },
     {
-      category: 'Industry Professional',
-      early: 'TBA',
-      regular: 'TBA',
-      onsite: 'TBA',
+      category: 'Delegates from Other Countries',
+      amount: 'USD 100',
     },
     {
-      category: 'Virtual Attendance',
-      early: 'TBA',
-      regular: 'TBA',
-      onsite: 'TBA',
+      category: 'Undergraduate and Postgraduate Students',
+      amount: 'Rs 2,500',
+    },
+    {
+      category: 'General Participants',
+      amount: 'Rs 1,500',
     },
   ];
 
@@ -40,9 +36,7 @@ const Registration = () => {
                 <thead className="bg-blue-600 text-white">
                   <tr>
                     <th className="px-6 py-4 text-left">Category</th>
-                    <th className="px-6 py-4 text-center">Early Bird</th>
-                    <th className="px-6 py-4 text-center">Regular</th>
-                    <th className="px-6 py-4 text-center">On-site</th>
+                    <th className="px-6 py-4 text-center">Registration Fee</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -51,14 +45,8 @@ const Registration = () => {
                       <td className="px-6 py-4 font-semibold text-gray-900 dark:text-white">
                         {fee.category}
                       </td>
-                      <td className="px-6 py-4 text-center text-gray-700 dark:text-gray-300">
-                        {fee.early}
-                      </td>
-                      <td className="px-6 py-4 text-center text-gray-700 dark:text-gray-300">
-                        {fee.regular}
-                      </td>
-                      <td className="px-6 py-4 text-center text-gray-700 dark:text-gray-300">
-                        {fee.onsite}
+                      <td className="px-6 py-4 text-center text-gray-700 dark:text-gray-300 font-semibold">
+                        {fee.amount}
                       </td>
                     </tr>
                   ))}
@@ -78,25 +66,25 @@ const Registration = () => {
                 <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                Access to all conference sessions
+                Access to plenary sessions, technical sessions, and panel discussion
               </li>
               <li className="flex items-start">
                 <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                Conference materials and proceedings
+                Refreshments, lunch, and conference dinner
               </li>
               <li className="flex items-start">
                 <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                Lunch and refreshments
+                Conference kit (bag, writing materials, and stationery)
               </li>
               <li className="flex items-start">
                 <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                Conference certificate
+                Conference proceedings publication
               </li>
               <li className="flex items-start">
                 <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -106,7 +94,31 @@ const Registration = () => {
               </li>
             </ul>
           </div>
-
+          <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-md">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+              Submission and Registration Policy:
+            </h3>
+            <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+              <li className="flex items-start">
+                <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                Each author may submit a maximum of five (5) full papers/extended abstracts
+              </li>
+              <li className="flex items-start">
+                <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                Each accepted paper must be registered separately
+              </li>
+              <li className="flex items-start">
+                <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                One conference kit per registered participant, regardless of number of papers
+              </li>
+            </ul>
+          </div>
           <div className="text-center">
             <a
               href="#contact"

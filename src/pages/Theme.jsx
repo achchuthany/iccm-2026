@@ -7,27 +7,27 @@ const Theme = () => {
         </h2>
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-6">
-            "Innovation and Sustainability in Contemporary Management"
+            "Shaping Regions for Resilience, Inclusion, and Sustainability"
           </h3>
           <p className="text-gray-700 dark:text-gray-300 text-lg mb-6">
-            The theme explores the intersection of innovative management practices and sustainable 
-            business strategies in the modern global economy. We invite submissions that address 
-            contemporary challenges and opportunities in management from both theoretical and 
-            practical perspectives.
+            The theme reflects the urgent need to strengthen regional economies, reduce inequalities, and harness
+            innovation to help communities withstand economic, social, and environmental shocks, positioning ICCM
+            2026 as a key forum for rethinking contemporary management and business practices that support
+            sustainable and inclusive regional development.
           </p>
           <div className="grid md:grid-cols-2 gap-6 mt-12">
             <div className="p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md">
-              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Innovation</h4>
+              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Resilience</h4>
               <p className="text-gray-700 dark:text-gray-300">
-                Exploring cutting-edge management practices, digital transformation, and technological 
-                disruption in organizational settings.
+                Strengthening regional economies to withstand economic, social, and environmental shocks
+                through innovative management practices.
               </p>
             </div>
             <div className="p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md">
-              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Sustainability</h4>
+              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Inclusion & Sustainability</h4>
               <p className="text-gray-700 dark:text-gray-300">
-                Examining sustainable business models, corporate social responsibility, and 
-                environmental stewardship in management.
+                Reducing inequalities and promoting sustainable business practices that support
+                inclusive regional development.
               </p>
             </div>
           </div>

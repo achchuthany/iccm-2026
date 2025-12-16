@@ -1,19 +1,39 @@
 const Committees = () => {
   const committees = {
+    general: [
+      { name: 'Prof. N. Kengatharan', role: 'General Chair' },
+    ],
+    coChairs: [
+      { name: 'Prof. (Ms). S. Shanmugathas', role: 'Co-Chair' },
+      { name: 'Prof. S. Sivesan', role: 'Co-Chair' },
+      { name: 'Prof. (Ms) L. Kengatharan', role: 'Co-Chair' },
+      { name: 'Prof. P. Pratheepkanth', role: 'Co-Chair' },
+      { name: 'Prof. S. Achchuthan', role: 'Co-Chair' },
+      { name: 'Dr. A. Saravanabawan', role: 'Co-Chair' },
+    ],
     organizing: [
-      { name: 'TBA', role: 'Conference Chair', affiliation: 'TBA' },
-      { name: 'TBA', role: 'Program Chair', affiliation: 'TBA' },
-      { name: 'TBA', role: 'Registration Chair', affiliation: 'TBA' },
+      { name: 'Prof. P. Pratheepkanth', role: 'Convener' },
+      { name: 'Dr. (Ms) S. Vaikunthavasan', role: 'Secretary' },
+      { name: 'Mr. S. Balaputhiran', role: 'Treasurer' },
     ],
-    program: [
-      { name: 'TBA', affiliation: 'TBA' },
-      { name: 'TBA', affiliation: 'TBA' },
-      { name: 'TBA', affiliation: 'TBA' },
-    ],
-    advisory: [
-      { name: 'TBA', affiliation: 'TBA' },
-      { name: 'TBA', affiliation: 'TBA' },
-    ],
+    editorial: {
+      chief: { name: 'Dr. S. Rajumesh', role: 'Editor-in-Chief' },
+      managing: { name: 'Mr. K. Kajenthiran', role: 'Managing Editor' },
+      associate: [
+        { name: 'Dr. (Ms). S. Anandasayanan' },
+        { name: 'Dr. (Ms). D. Sangarathas' },
+        { name: 'Mr. N. Umakanth' },
+        { name: 'Ms. T. Thanushan' },
+        { name: 'Mr. Aloy Niresh' },
+      ],
+      members: [
+        { name: 'Dr. (Ms). J. Thevananths' },
+        { name: 'Ms. M. Raveeswaran' },
+        { name: 'Mr. V. Kumaradeepan' },
+        { name: 'Ms. I. Kajananthan' },
+        { name: 'Ms. K. Tharsika' },
+      ],
+    },
   };
 
   return (
@@ -24,12 +44,48 @@ const Committees = () => {
         </h2>
         
         <div className="space-y-12">
+          {/* General Chair */}
+          <div>
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+              General Chair
+            </h3>
+            <div className="max-w-md mx-auto">
+              <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900 dark:to-blue-800 rounded-lg shadow-lg text-center">
+                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  {committees.general[0].name}
+                </h4>
+                <p className="text-blue-600 dark:text-blue-400 font-medium">
+                  {committees.general[0].role}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Co-Chairs */}
+          <div>
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+              Co-Chairs
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              {committees.coChairs.map((member, index) => (
+                <div
+                  key={index}
+                  className="p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md text-center"
+                >
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
+                    {member.name}
+                  </h4>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Organizing Committee */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
               Organizing Committee
             </h3>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {committees.organizing.map((member, index) => (
                 <div
                   key={index}
@@ -38,65 +94,80 @@ const Committees = () => {
                   <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                     {member.name}
                   </h4>
-                  <p className="text-blue-600 dark:text-blue-400 font-medium mb-1">
+                  <p className="text-blue-600 dark:text-blue-400 font-medium">
                     {member.role}
                   </p>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">
-                    {member.affiliation}
-                  </p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Program Committee */}
+          {/* Editorial Board */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-              Program Committee
+              Editorial Board
             </h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              {committees.program.map((member, index) => (
-                <div
-                  key={index}
-                  className="p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md text-center"
-                >
+            <div className="space-y-8">
+              {/* Editor-in-Chief and Managing Editor */}
+              <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                <div className="p-6 bg-green-50 dark:bg-green-900 rounded-lg shadow-md text-center">
                   <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                    {member.name}
+                    {committees.editorial.chief.name}
                   </h4>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">
-                    {member.affiliation}
+                  <p className="text-green-600 dark:text-green-400 font-medium">
+                    {committees.editorial.chief.role}
                   </p>
                 </div>
-              ))}
-            </div>
-          </div>
+                <div className="p-6 bg-green-50 dark:bg-green-900 rounded-lg shadow-md text-center">
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                    {committees.editorial.managing.name}
+                  </h4>
+                  <p className="text-green-600 dark:text-green-400 font-medium">
+                    {committees.editorial.managing.role}
+                  </p>
+                </div>
+              </div>
 
-          {/* Advisory Committee */}
-          <div>
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-              Advisory Committee
-            </h3>
-            <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-              {committees.advisory.map((member, index) => (
-                <div
-                  key={index}
-                  className="p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md text-center"
-                >
-                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                    {member.name}
-                  </h4>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">
-                    {member.affiliation}
-                  </p>
+              {/* Associate Editors */}
+              <div>
+                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 text-center">
+                  Associate Editors
+                </h4>
+                <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4">
+                  {committees.editorial.associate.map((member, index) => (
+                    <div
+                      key={index}
+                      className="p-4 bg-white dark:bg-gray-900 rounded-lg shadow-md text-center"
+                    >
+                      <h5 className="text-sm font-semibold text-gray-900 dark:text-white">
+                        {member.name}
+                      </h5>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
+
+              {/* Editorial Members */}
+              <div>
+                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 text-center">
+                  Editorial Members
+                </h4>
+                <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4">
+                  {committees.editorial.members.map((member, index) => (
+                    <div
+                      key={index}
+                      className="p-4 bg-white dark:bg-gray-900 rounded-lg shadow-md text-center"
+                    >
+                      <h5 className="text-sm font-semibold text-gray-900 dark:text-white">
+                        {member.name}
+                      </h5>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <p className="text-center text-gray-600 dark:text-gray-400 mt-12 text-lg">
-          Committee members will be announced soon.
-        </p>
       </div>
     </section>
   );

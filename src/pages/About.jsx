@@ -7,14 +7,16 @@ const About = () => {
         </h2>
         <div className="prose prose-lg dark:prose-invert max-w-none">
           <p className="text-gray-700 dark:text-gray-300 mb-6">
-            The 9th International Conference on Contemporary Management (ICCM 2026) brings together 
-            researchers, practitioners, and thought leaders from around the world to discuss the latest 
-            developments and innovations in management theory and practice.
+            The 9th International Conference on Contemporary Management (ICCM 2026), organised by the Faculty
+            of Management Studies and Commerce, University of Jaffna, Sri Lanka, will be held on 3-4 June 2026
+            under the sphere of the Jaffna University International Research Conference – 2026 (JUICe-2026).
           </p>
           <p className="text-gray-700 dark:text-gray-300 mb-6">
-            ICCM provides a premier interdisciplinary platform for researchers, practitioners, and educators 
-            to present and discuss the most recent innovations, trends, and concerns as well as practical 
-            challenges encountered and solutions adopted in the fields of contemporary management.
+            ICCM 2026 will provide a vibrant platform for academics, policymakers, industry leaders, and practitioners
+            in management, commerce, business, accounting, finance, human resource management, marketing,
+            and tourism to present research and share experiences on governance and policy, inclusive economic
+            growth and local livelihoods, sustainable infrastructure and climate-resilient regions, and innovation,
+            knowledge, and digital transformation for sustainability.
           </p>
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="text-center p-6 bg-blue-50 dark:bg-gray-800 rounded-lg">
@@ -22,12 +24,12 @@ const About = () => {
               <div className="text-gray-700 dark:text-gray-300">Edition</div>
             </div>
             <div className="text-center p-6 bg-blue-50 dark:bg-gray-800 rounded-lg">
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">International</div>
-              <div className="text-gray-700 dark:text-gray-300">Participation</div>
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">3-4 June</div>
+              <div className="text-gray-700 dark:text-gray-300">2026</div>
             </div>
             <div className="text-center p-6 bg-blue-50 dark:bg-gray-800 rounded-lg">
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">Prestigious</div>
-              <div className="text-gray-700 dark:text-gray-300">Platform</div>
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">Jaffna</div>
+              <div className="text-gray-700 dark:text-gray-300">Sri Lanka</div>
             </div>
           </div>
         </div>
