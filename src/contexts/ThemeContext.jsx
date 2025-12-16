@@ -32,8 +32,15 @@ export function ThemeProvider({ children }) {
   useEffect(() => {
     const media = window.matchMedia("(prefers-color-scheme: dark)");
     const handleChange = (event) => {
+      // Only update from system preference if user hasn't manually set a theme
       const saved = localStorage.getItem("theme");
-      if (saved !== "light" && saved !== "dark") {
+      const userManuallySet = localStorage.getItem("theme-manually-set");
+      
+      // System preference only applies when:
+      // 1. User hasn't manually toggled the theme, AND
+      // 2. No theme is saved (brand new user or cleared storage)
+      // This preserves both manual choices and previously saved themes
+      if (userManuallySet !== "true" && !saved) {
         setTheme(event.matches ? "dark" : "light");
       }
     };
@@ -43,6 +50,8 @@ export function ThemeProvider({ children }) {
   }, []);
 
   const toggleTheme = () => {
+    // Mark that user has manually set the theme
+    localStorage.setItem("theme-manually-set", "true");
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
 
