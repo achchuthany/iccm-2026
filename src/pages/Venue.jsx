@@ -23,14 +23,15 @@ const Venue = () => {
               </p>
             </div>
 
-            {/* Map Placeholder */}
-            <div className="bg-gray-200 dark:bg-gray-700 rounded-lg h-64 flex items-center justify-center mb-8">
-              <div className="text-center">
-                <svg className="w-16 h-16 mx-auto text-gray-400 dark:text-gray-500 mb-4" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                </svg>
-                <p className="text-gray-600 dark:text-gray-400">Map will be available soon</p>
-              </div>
+            <div className="relative w-full overflow-hidden rounded-lg aspect-video mb-8 bg-gray-200 dark:bg-gray-700">
+              <iframe
+                className="absolute inset-0 h-full w-full rounded-lg border-0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1209.8153297066785!2d80.03811085315009!3d9.692988695216956!2m3!1f0!2f35!3f60!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe55266b39a675%3A0x44fc854d05ff3c39!2sFaculty%20of%20Management%20Studies%20and%20Commerce%2C%20University%20of%20Jaffna!5e1!3m2!1sen!2slk!4v1766463759123!5m2!1sen!2slk"
+                loading="lazy"
+                allowFullScreen
+                title="Map (satellite/tilt): Faculty of Management Studies and Commerce, University of Jaffna"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </div>
 

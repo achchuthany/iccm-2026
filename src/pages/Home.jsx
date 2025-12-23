@@ -1,3 +1,5 @@
+import Countdown from "../components/Countdown";
+
 const stats = [
   { label: "Editions", value: "9th", detail: "Building on a decade of impact" },
   {
@@ -6,11 +8,11 @@ const stats = [
     detail: "University of Jaffna, Sri Lanka",
   },
   {
-    label: "Research",
+    label: "Last Conference",
     value: "150+ Papers",
     detail: "Peer-reviewed contributions",
   },
-  { label: "Format", value: "Hybrid", detail: "On-site & live-streamed" },
+  { label: "Format", value: "On-site", detail: "Physical conference only" },
 ];
 
 const Home = () => {
@@ -28,7 +30,7 @@ const Home = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-200 text-sm font-semibold">
-              9th International Conference on Contemporary Management
+              9<sup>th</sup> International Conference on Contemporary Management
             </p>
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white leading-tight">
               ICCM 2026
@@ -56,7 +58,7 @@ const Home = () => {
 
             <div className="flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-300">
               <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/80 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
-                <span className="h-2 w-2 rounded-full bg-emerald-500" /> Hybrid
+                <span className="h-2 w-2 rounded-full bg-emerald-500" /> On-site
                 experience
               </span>
               <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/80 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
@@ -73,18 +75,7 @@ const Home = () => {
           <div className="bg-white/80 dark:bg-gray-900/70 backdrop-blur rounded-2xl p-6 shadow-2xl border border-gray-100 dark:border-gray-800">
             <div className="flex flex-col gap-4">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 p-4 rounded-xl bg-blue-50 dark:bg-blue-900/30">
-                <div>
-                  <p className="text-sm uppercase tracking-wide text-blue-700 dark:text-blue-200 font-semibold">
-                    Conference window
-                  </p>
-                  <p className="text-xl font-bold text-gray-900 dark:text-white">
-                    Dates: TBA 2026
-                  </p>
-                </div>
-                <div className="text-sm text-gray-700 dark:text-gray-300">
-                  Venue details to be announced with onsite + online
-                  participation.
-                </div>
+                <Countdown targetDate="2026-06-03T00:00:00Z" />
               </div>
 
               <div className="grid sm:grid-cols-2 gap-4">

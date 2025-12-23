@@ -1,3 +1,6 @@
+import kiridaranImage from '../assets/kiridaran.jpg';
+import sunithaImage from '../assets/sunitha.jpg';
+
 const KeynoteSpeakers = () => {
   const speakers = [
     {
@@ -5,12 +8,14 @@ const KeynoteSpeakers = () => {
       title: 'Professor and Ron Binns Chair in Financial Reporting, Banking and Governance',
       affiliation: 'Schulich School of Business, York University, Canada',
       topic: 'Financial Reporting and Corporate Governance',
+      image: kiridaranImage,
     },
     {
       name: 'Professor Sunitha Narendran',
       title: 'Professor of Business and Associate Pro Vice-Chancellor',
       affiliation: 'University of Roehampton, London',
       topic: 'Internationalisation and Global Engagement',
+      image: sunithaImage,
     },
   ];
 
@@ -26,10 +31,12 @@ const KeynoteSpeakers = () => {
               key={index}
               className="p-8 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg text-center"
             >
-              <div className="w-32 h-32 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                </svg>
+              <div className="w-80 h-80 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <img
+                  src={speaker.image}
+                  alt={speaker.name}
+                  className="w-76 h-76 rounded-full object-cover border-4 border-white shadow-md"
+                />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
                 {speaker.name}
@@ -46,9 +53,6 @@ const KeynoteSpeakers = () => {
             </div>
           ))}
         </div>
-        <p className="text-center text-gray-600 dark:text-gray-400 mt-12 text-lg">
-          Distinguished speakers will be announced soon. Stay tuned!
-        </p>
       </div>
     </section>
   );
