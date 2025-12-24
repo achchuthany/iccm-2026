@@ -7,28 +7,40 @@ const About = () => {
         </h2>
         <div className="prose prose-lg dark:prose-invert max-w-none">
           <p className="text-gray-700 dark:text-gray-300 mb-6 text-justify">
-            The 9th International Conference on Contemporary Management (ICCM 2026), organised by the Faculty
-            of Management Studies and Commerce, University of Jaffna, Sri Lanka, will be held on 3-4 June 2026
-            under the sphere of the Jaffna University International Research Conference – 2026 (JUICe-2026).
+            The 9<sup>th</sup> International Conference on Contemporary
+            Management (ICCM 2026), organised by the Faculty of Management
+            Studies and Commerce, University of Jaffna, Sri Lanka, will be held
+            on 3<sup>rd</sup> and 4<sup>th</sup> June under the sphere of the
+            Jaffna University International Research Conference – 2026
+            (JUICe-2026).
           </p>
           <p className="text-gray-700 dark:text-gray-300 mb-6 text-justify">
-            ICCM 2026 will provide a vibrant platform for academics, policymakers, industry leaders, and practitioners
-            in management, commerce, business, accounting, finance, human resource management, marketing,
-            and tourism to present research and share experiences on governance and policy, inclusive economic
-            growth and local livelihoods, sustainable infrastructure and climate-resilient regions, and innovation,
-            knowledge, and digital transformation for sustainability.
+            ICCM 2026 will provide a vibrant platform for academics,
+            policymakers, industry leaders, and practitioners in management,
+            commerce, business, accounting, finance, human resource management,
+            marketing, and tourism to present research and share experiences on
+            governance and policy, inclusive economic growth and local
+            livelihoods, sustainable infrastructure and climate-resilient
+            regions, and innovation, knowledge, and digital transformation for
+            sustainability.
           </p>
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="text-center p-6 bg-blue-50 dark:bg-gray-800 rounded-lg">
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">9th</div>
-              <div className="text-gray-700 dark:text-gray-300">Edition</div>
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+                9<sup>th</sup>
+              </div>
+              <div className="text-gray-700 dark:text-gray-300">Conference</div>
             </div>
             <div className="text-center p-6 bg-blue-50 dark:bg-gray-800 rounded-lg">
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">3-4 June</div>
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+                3<sup>rd</sup> and 4<sup>th</sup> June
+              </div>
               <div className="text-gray-700 dark:text-gray-300">2026</div>
             </div>
             <div className="text-center p-6 bg-blue-50 dark:bg-gray-800 rounded-lg">
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">Jaffna</div>
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+                Jaffna
+              </div>
               <div className="text-gray-700 dark:text-gray-300">Sri Lanka</div>
             </div>
           </div>
