@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -76,11 +77,14 @@ const Navigation = () => {
                 </div>
               )}
             </div>
-
+                     <ThemeToggle  />
           </div>
+
+
 
           {/* Mobile menu button */}
           <div className="flex lg:hidden items-center space-x-2">    
+             <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
