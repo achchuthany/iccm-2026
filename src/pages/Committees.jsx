@@ -27,7 +27,7 @@ const Committees = () => {
         { name: 'Mr. Aloy Niresh' },
       ],
       members: [
-        { name: 'Dr. (Ms). J. Thevananths' },
+        { name: 'Dr. (Ms). J. Thevananth' },
         { name: 'Ms. M. Raveeswaran' },
         { name: 'Mr. V. Kumaradeepan' },
         { name: 'Ms. I. Kajananthan' },

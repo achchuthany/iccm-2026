@@ -67,15 +67,15 @@ const Programme = () => {
             <div className="space-y-4">
               <div>
                 <p className="font-semibold text-gray-900 dark:text-white mb-2">Moderator:</p>
-                <p className="text-gray-700 dark:text-gray-300">Professor Tissa Ravinda Perera, University of Colombo, Sri Lanka</p>
+                <p className="text-gray-700 dark:text-gray-300">Prof. Tissa Ravinda Perera, University of Colombo, Sri Lanka</p>
               </div>
               <div>
                 <p className="font-semibold text-gray-900 dark:text-white mb-2">Panelists:</p>
                 <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                  <li>• <strong>Governance and Policy:</strong> Professor Sutha Kanapathipillai, Deakin University, Australia</li>
-                  <li>• <strong>Economic Growth & Entrepreneurship:</strong> Ms. Poongothai Venuganan, Deputy Director, Central Bank of Sri Lanka</li>
-                  <li>• <strong>Sustainable Infrastructure:</strong> Mr. Sampath Jayawardena, Senior Director, Ernst & Young</li>
-                  <li>• <strong>Digital Transformation:</strong> Professor Roshan G. Ragel, University of Peradeniya, Sri Lanka</li>
+                  <li>• <strong>Governance, Policy, and Multi-Stakeholder Collaboration :</strong> Asso. Prof. Sutha Kanapathipillai, Deakin University, Australia</li>
+                  <li>• <strong>Inclusive Economic Growth, Entrepreneurship, and Local Livelihoods:</strong> Dr. Gajendra Liyanaarachchi, University of Portsmouth England</li>
+                  <li>• <strong>Sustainable Infrastructure and Climate-Resilient Regions: </strong> Mr. Sampath Jayawardena, Senior Director, Ernst & Young</li>
+                  <li>• <strong>Innovation, Knowledge, and Digital Transformation for Sustainability</strong>Prof. Roshan G. Ragel, University of Peradeniya, Sri Lanka </li>
                 </ul>
               </div>
             </div>

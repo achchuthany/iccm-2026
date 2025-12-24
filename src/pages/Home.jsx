@@ -11,6 +11,7 @@ const stats = [
     label: "Last Conference",
     value: "150+ Papers",
     detail: "Peer-reviewed contributions",
+    url:'/2024'
   },
   { label: "Format", value: "On-site", detail: "Physical conference only" },
 ];
@@ -146,8 +147,29 @@ const Home = () => {
                 {stats.map((item) => (
                   <div
                     key={item.label}
-                    className="p-4 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-800"
+                    className="relative p-4 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-800"
                   >
+                    {item.url && (
+                      <a
+                        href={item.url}
+                        className="absolute top-2 right-2 p-1 rounded-full bg-blue-100 dark:bg-blue-900/40 hover:bg-blue-200 dark:hover:bg-blue-800/60 transition-colors"
+                        aria-label={`View ${item.label} details`}
+                      >
+                        <svg
+                          className="w-4 h-4 text-blue-600 dark:text-blue-400"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    )}
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                       {item.label}
                     </p>

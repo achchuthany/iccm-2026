@@ -26,9 +26,9 @@ function App() {
         <ImportantDates />
         <KeynoteSpeakers />
         <Committees />
+        <Programme />
         <FocusAreas />
         <Registration />
-        <Programme />
         <Venue />
         <Sponsors />
         <Contact />

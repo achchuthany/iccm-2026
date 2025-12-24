@@ -6,12 +6,12 @@ const About = () => {
           About ICCM 2026
         </h2>
         <div className="prose prose-lg dark:prose-invert max-w-none">
-          <p className="text-gray-700 dark:text-gray-300 mb-6">
+          <p className="text-gray-700 dark:text-gray-300 mb-6 text-justify">
             The 9th International Conference on Contemporary Management (ICCM 2026), organised by the Faculty
             of Management Studies and Commerce, University of Jaffna, Sri Lanka, will be held on 3-4 June 2026
             under the sphere of the Jaffna University International Research Conference – 2026 (JUICe-2026).
           </p>
-          <p className="text-gray-700 dark:text-gray-300 mb-6">
+          <p className="text-gray-700 dark:text-gray-300 mb-6 text-justify">
             ICCM 2026 will provide a vibrant platform for academics, policymakers, industry leaders, and practitioners
             in management, commerce, business, accounting, finance, human resource management, marketing,
             and tourism to present research and share experiences on governance and policy, inclusive economic

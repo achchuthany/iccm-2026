@@ -293,7 +293,7 @@ const CallForPapers = () => {
               Opportunity to Publish
             </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-3">
-              Selected high-quality full papers will have the opportunity to be forwarded to prestigious journals:
+             <span className="text-blue-600 dark:text-blue-400"> Selected high-quality full papers</span> will have the opportunity to be forwarded to prestigious journals:
             </p>
             <ul className="space-y-2 text-gray-700 dark:text-gray-300">
               <li className="flex items-start">
