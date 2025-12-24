@@ -33,7 +33,7 @@ const About = () => {
             </div>
             <div className="text-center p-6 bg-blue-50 dark:bg-gray-800 rounded-lg">
               <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                3<sup>rd</sup> and 4<sup>th</sup> June
+                3<sup>rd</sup> & 4<sup>th</sup> June
               </div>
               <div className="text-gray-700 dark:text-gray-300">2026</div>
             </div>

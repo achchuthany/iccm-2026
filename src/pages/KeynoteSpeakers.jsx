@@ -4,7 +4,7 @@ import sunithaImage from "../assets/sunitha.jpg";
 const KeynoteSpeakers = () => {
   const speakers = [
     {
-      name: "Professor Kiridaran (Giri) Kanagaretnam",
+      name: "Prof. Kiridaran (Giri) Kanagaretnam",
       title:
         "Professor and Ron Binns Chair in Financial Reporting, Banking and Governance",
       affiliation: "Schulich School of Business, York University, Canada",
@@ -13,7 +13,7 @@ const KeynoteSpeakers = () => {
       url: "https://schulich.yorku.ca/faculty/kiridaran-kanagaretnam/",
     },
     {
-      name: "Professor Sunitha Narendran",
+      name: "Prof. Sunitha Narendran",
       title: "Professor of Business and Associate Pro Vice-Chancellor",
       affiliation: "University of Roehampton, London",
       topic: "Internationalisation and Global Engagement",
