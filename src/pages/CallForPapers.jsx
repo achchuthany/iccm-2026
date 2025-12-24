@@ -283,7 +283,7 @@ const CallForPapers = () => {
           Call for Papers
         </h2>
         <div className="max-w-4xl mx-auto">
-          <p className="text-gray-700 dark:text-gray-300 text-lg mb-8">
+          <p className="text-gray-700 dark:text-gray-300 text-lg mb-8 text-justify">
             ICCM 2026 invites full papers / extended abstracts from national and international researchers, providing
             an open forum to share research findings, ideas, and experiences in the fields of business, commerce,
             and management. Selected abstracts will be published in the conference proceedings.
@@ -293,7 +293,7 @@ const CallForPapers = () => {
               Opportunity to Publish
             </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-3">
-             <span className="text-blue-600 dark:text-blue-400"> Selected high-quality full papers</span> will have the opportunity to be forwarded to prestigious journals:
+             <b className="text-green-600 dark:text-green-400"> Selected high-quality full papers</b> will have the opportunity to be forwarded to prestigious journals:
             </p>
             <ul className="space-y-2 text-gray-700 dark:text-gray-300">
               <li className="flex items-start">

@@ -93,25 +93,35 @@ const FocusAreas = () => {
           ICCM 2026 welcomes submissions across a broad range of management topics. 
           Key focus areas include but are not limited to:
         </p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {areas.map((area, index) => (
             <div
               key={index}
-              className="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow"
+              className="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 overflow-hidden"
             >
-              <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-4">
-                {area.title}
-              </h3>
-              <ul className="space-y-2">
-                {area.topics.map((topic, idx) => (
-                  <li key={idx} className="text-gray-700 dark:text-gray-300 text-sm flex items-start">
-                    <svg className="w-5 h-5 text-blue-600 dark:text-blue-400 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-                    </svg>
-                    {topic}
-                  </li>
-                ))}
-              </ul>
+              {/* Header with number and title */}
+              <div className="p-6 pb-4">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-md">
+                    {index + 1}
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                  {area.title}
+                </h3>
+              </div>
+
+              {/* Topics list */}
+              <div className="px-6 pb-6">
+                <ul className="space-y-3">
+                  {area.topics.map((topic, idx) => (
+                    <li key={idx} className="text-gray-600 dark:text-gray-300 text-sm flex items-start">
+                      <div className="w-1.5 h-1.5 bg-blue-400 dark:bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span>{topic}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>
