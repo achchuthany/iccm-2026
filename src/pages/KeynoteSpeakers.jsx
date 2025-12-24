@@ -1,21 +1,24 @@
-import kiridaranImage from '../assets/kiridaran.jpg';
-import sunithaImage from '../assets/sunitha.jpg';
+import kiridaranImage from "../assets/kiridaran.jpg";
+import sunithaImage from "../assets/sunitha.jpg";
 
 const KeynoteSpeakers = () => {
   const speakers = [
     {
-      name: 'Professor Kiridaran (Giri) Kanagaretnam',
-      title: 'Professor and Ron Binns Chair in Financial Reporting, Banking and Governance',
-      affiliation: 'Schulich School of Business, York University, Canada',
-      topic: 'Financial Reporting and Corporate Governance',
+      name: "Professor Kiridaran (Giri) Kanagaretnam",
+      title:
+        "Professor and Ron Binns Chair in Financial Reporting, Banking and Governance",
+      affiliation: "Schulich School of Business, York University, Canada",
+      topic: "Financial Reporting and Corporate Governance",
       image: kiridaranImage,
+      url: "https://schulich.yorku.ca/faculty/kiridaran-kanagaretnam/",
     },
     {
-      name: 'Professor Sunitha Narendran',
-      title: 'Professor of Business and Associate Pro Vice-Chancellor',
-      affiliation: 'University of Roehampton, London',
-      topic: 'Internationalisation and Global Engagement',
+      name: "Professor Sunitha Narendran",
+      title: "Professor of Business and Associate Pro Vice-Chancellor",
+      affiliation: "University of Roehampton, London",
+      topic: "Internationalisation and Global Engagement",
       image: sunithaImage,
+      url: "https://www.roehampton.ac.uk/staff/sunitha-narendran/",
     },
   ];
 
@@ -29,8 +32,32 @@ const KeynoteSpeakers = () => {
           {speakers.map((speaker, index) => (
             <div
               key={index}
-              className="p-8 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg text-center"
+              className="relative p-8 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg text-center"
             >
+              {speaker.url && (
+                <a
+                  href={speaker.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Open ${speaker.name} profile`}
+                  className="absolute top-2 right-2 p-1 rounded-full bg-blue-100 dark:bg-blue-900/40 hover:bg-blue-200 dark:hover:bg-blue-800/60 transition-colors"
+                >
+                  <svg
+                    className="w-4 h-4 text-blue-600 dark:text-blue-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </a>
+              )}
+
               <div className="w-80 h-80 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <img
                   src={speaker.image}
