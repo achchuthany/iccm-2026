@@ -17,7 +17,7 @@ const Committees = () => {
       { name: 'Mr. S. Balaputhiran', role: 'Treasurer' },
     ],
     editorial: {
-      chief: { name: 'Dr. S. Rajumesh', role: 'Editor-in-Chief' },
+      chief: { name: 'Prof. S. Rajumesh', role: 'Editor-in-Chief' },
       managing: { name: 'Mr. K. Kajenthiran', role: 'Managing Editor' },
       associate: [
         { name: 'Dr. (Ms). S. Anandasayanan' },
