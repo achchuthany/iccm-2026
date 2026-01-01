@@ -1,17 +1,40 @@
 import Countdown from "../components/Countdown";
 
 const stats = [
-  { label: "Editions", value: "9th", detail: "Building on a decade of impact" },
+  {
+    label: "Conference",
+    value: (
+      <>
+        9
+        <span className="align-baseline text-xs leading-none">
+          <sup className="text-xs leading-none">th</sup>
+        </span>
+      </>
+    ),
+    detail: "Building on a decade of impact",
+  },
   {
     label: "Date",
-    value: "3-4 June 2026",
+    value: (
+      <>
+        3
+        <span className="align-baseline text-xs leading-none">
+          <sup className="text-xs leading-none">rd</sup>
+        </span>{" "}
+        &amp; 4
+        <span className="align-baseline text-xs leading-none">
+          <sup className="text-xs leading-none">th</sup>
+        </span>{" "}
+        June 2026
+      </>
+    ),
     detail: "University of Jaffna, Sri Lanka",
   },
   {
-    label: "Last Conference",
+    label: "Last Conference (2024)",
     value: "150+ Papers",
     detail: "Peer-reviewed contributions",
-    url:'/2024'
+    url: "/2024",
   },
   { label: "Format", value: "On-site", detail: "Physical conference only" },
 ];
@@ -31,7 +54,11 @@ const Home = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-200 text-sm font-semibold">
-              9th International Conference on Contemporary Management
+              <span className="inline-flex items-baseline gap-0.5 tracking-wide">
+                <span className="leading-none">9</span>
+                <sup className="text-xs leading-none">th</sup>
+              </span>{" "}
+              International Conference on Contemporary Management
             </p>
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white leading-tight">
               ICCM 2026
@@ -60,76 +87,189 @@ const Home = () => {
             <div className="space-y-6">
               <div className="flex flex-wrap gap-3 text-sm text-gray-600 dark:text-gray-300">
                 <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/80 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
-                  <span className="h-2 w-2 rounded-full bg-emerald-500" /> On-site experience
+                  <span className="h-2 w-2 rounded-full bg-emerald-500" />{" "}
+                  On-site experience
                 </span>
                 <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/80 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
-                  <span className="h-2 w-2 rounded-full bg-blue-500" /> Live keynotes & workshops
+                  <span className="h-2 w-2 rounded-full bg-blue-500" /> Live
+                  keynotes & workshops
                 </span>
                 <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/80 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
-                  <span className="h-2 w-2 rounded-full bg-amber-500" /> Networking & mentoring
+                  <span className="h-2 w-2 rounded-full bg-amber-500" />{" "}
+                  Networking & mentoring
                 </span>
               </div>
-              
+
               <div>
-                <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-3">Submission Categories</p>
+                <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-3">
+                  Submission Categories
+                </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <a href="#call-for-papers" className="group flex items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-blue-50 to-blue-100/50 dark:from-blue-900/20 dark:to-blue-800/10 border border-blue-200 dark:border-blue-800 hover:shadow-md hover:border-blue-400 dark:hover:border-blue-600 transition-all">
+                  <a
+                    href="#call-for-papers"
+                    className="group flex items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-blue-50 to-blue-100/50 dark:from-blue-900/20 dark:to-blue-800/10 border border-blue-200 dark:border-blue-800 hover:shadow-md hover:border-blue-400 dark:hover:border-blue-600 transition-all"
+                  >
                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 dark:bg-blue-500 flex items-center justify-center">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      <svg
+                        className="w-5 h-5 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                        />
                       </svg>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="font-semibold text-gray-900 dark:text-white">Full Paper</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Up to 6000 words</div>
+                      <div className="font-semibold text-gray-900 dark:text-white">
+                        Full Paper
+                      </div>
+                      <div className="text-xs text-gray-600 dark:text-gray-400">
+                        Up to 6000 words
+                      </div>
                     </div>
-                    <svg className="w-4 h-4 text-blue-600 dark:text-blue-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <svg
+                      className="w-4 h-4 text-blue-600 dark:text-blue-400 group-hover:translate-x-1 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
                     </svg>
                   </a>
-                  
-                  <a href="#call-for-papers" className="group flex items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-emerald-50 to-emerald-100/50 dark:from-emerald-900/20 dark:to-emerald-800/10 border border-emerald-200 dark:border-emerald-800 hover:shadow-md hover:border-emerald-400 dark:hover:border-emerald-600 transition-all">
+
+                  <a
+                    href="#call-for-papers"
+                    className="group flex items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-emerald-50 to-emerald-100/50 dark:from-emerald-900/20 dark:to-emerald-800/10 border border-emerald-200 dark:border-emerald-800 hover:shadow-md hover:border-emerald-400 dark:hover:border-emerald-600 transition-all"
+                  >
                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-600 dark:bg-emerald-500 flex items-center justify-center">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                      <svg
+                        className="w-5 h-5 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                        />
                       </svg>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="font-semibold text-gray-900 dark:text-white">Extended Abstract</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">Structured sections</div>
+                      <div className="font-semibold text-gray-900 dark:text-white">
+                        Extended Abstract
+                      </div>
+                      <div className="text-xs text-gray-600 dark:text-gray-400">
+                        Structured sections
+                      </div>
                     </div>
-                    <svg className="w-4 h-4 text-emerald-600 dark:text-emerald-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <svg
+                      className="w-4 h-4 text-emerald-600 dark:text-emerald-400 group-hover:translate-x-1 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
                     </svg>
                   </a>
-                  
-                  <a href="#call-for-papers" className="group flex items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-purple-50 to-purple-100/50 dark:from-purple-900/20 dark:to-purple-800/10 border border-purple-200 dark:border-purple-800 hover:shadow-md hover:border-purple-400 dark:hover:border-purple-600 transition-all">
+
+                  <a
+                    href="#call-for-papers"
+                    className="group flex items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-purple-50 to-purple-100/50 dark:from-purple-900/20 dark:to-purple-800/10 border border-purple-200 dark:border-purple-800 hover:shadow-md hover:border-purple-400 dark:hover:border-purple-600 transition-all"
+                  >
                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-purple-600 dark:bg-purple-500 flex items-center justify-center">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                      <svg
+                        className="w-5 h-5 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                        />
                       </svg>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="font-semibold text-gray-900 dark:text-white">Doctoral Colloquium</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">1000-1500 words</div>
+                      <div className="font-semibold text-gray-900 dark:text-white">
+                        Doctoral Colloquium
+                      </div>
+                      <div className="text-xs text-gray-600 dark:text-gray-400">
+                        1000-1500 words
+                      </div>
                     </div>
-                    <svg className="w-4 h-4 text-purple-600 dark:text-purple-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <svg
+                      className="w-4 h-4 text-purple-600 dark:text-purple-400 group-hover:translate-x-1 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
                     </svg>
                   </a>
-                  
-                  <a href="#call-for-papers" className="group flex items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-amber-50 to-amber-100/50 dark:from-amber-900/20 dark:to-amber-800/10 border border-amber-200 dark:border-amber-800 hover:shadow-md hover:border-amber-400 dark:hover:border-amber-600 transition-all">
+
+                  <a
+                    href="#call-for-papers"
+                    className="group flex items-center gap-3 p-4 rounded-lg bg-gradient-to-br from-amber-50 to-amber-100/50 dark:from-amber-900/20 dark:to-amber-800/10 border border-amber-200 dark:border-amber-800 hover:shadow-md hover:border-amber-400 dark:hover:border-amber-600 transition-all"
+                  >
                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-amber-600 dark:bg-amber-500 flex items-center justify-center">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      <svg
+                        className="w-5 h-5 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                        />
                       </svg>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="font-semibold text-gray-900 dark:text-white">Undergraduate Poster</div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">A1 portrait format</div>
+                      <div className="font-semibold text-gray-900 dark:text-white">
+                        Undergraduate Poster
+                      </div>
+                      <div className="text-xs text-gray-600 dark:text-gray-400">
+                        A1 portrait format
+                      </div>
                     </div>
-                    <svg className="w-4 h-4 text-amber-600 dark:text-amber-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <svg
+                      className="w-4 h-4 text-amber-600 dark:text-amber-400 group-hover:translate-x-1 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
                     </svg>
                   </a>
                 </div>
