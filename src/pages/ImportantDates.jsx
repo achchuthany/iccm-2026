@@ -1,6 +1,6 @@
 const ImportantDates = () => {
   const dates = [
-    { event: 'Submission of Full Papers/Extended Abstracts', date: '15 February 2026' },
+    { event: 'Submission of Full Papers/Extended Abstracts', date: '15 February 2026 ' ,extented:'25 February 2026'},
     { event: 'Notification of Review Decision', date: '15 March 2026' },
     { event: 'Submission of Revised Papers/Abstracts', date: '01 April 2026' },
     { event: 'Final Notification Review Decision', date: '15 April 2026' },
@@ -34,10 +34,15 @@ const ImportantDates = () => {
                       <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                         {item.event}
                       </h3>
-                      <div className="flex-shrink-0">
-                        <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200">
+                      <div className="flex-shrink-0 flex flex-col gap-1">
+                        <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-normal bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200">
                           {item.date}
                         </span>
+                        {item.extented && (
+                          <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-normal bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200">
+                            Extended until {item.extented}
+                          </span>
+                        )}
                       </div>
                     </div>
                   </div>

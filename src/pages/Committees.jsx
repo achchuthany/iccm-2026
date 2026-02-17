@@ -5,8 +5,8 @@ const Committees = () => {
     ],
     coChairs: [
       { name: 'Prof. (Ms). S. Shanmugathas', role: 'Co-Chair' },
-      { name: 'Prof. S. Sivesan', role: 'Co-Chair' },
-      { name: 'Prof. (Ms) L. Kengatharan', role: 'Co-Chair' },
+      { name: 'Dr.(Ms).S.Vaikunthavasan', role: 'Co-Chair' },
+      { name: 'Prof.R.Vijayakumaran', role: 'Co-Chair' },
       { name: 'Prof. P. Pratheepkanth', role: 'Co-Chair' },
       { name: 'Prof. S. Achchuthan', role: 'Co-Chair' },
       { name: 'Dr. A. Saravanabawan', role: 'Co-Chair' },
