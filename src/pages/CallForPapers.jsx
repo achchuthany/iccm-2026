@@ -443,7 +443,7 @@ const CallForPapers = () => {
               </svg>
             </a>
             <a
-              href="https://cmt3.research.microsoft.com"
+              href="https://cmt3.research.microsoft.com/ICCM2026/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all"
