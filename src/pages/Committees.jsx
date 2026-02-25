@@ -18,7 +18,7 @@ const Committees = () => {
     ],
     editorial: {
       chief: { name: 'Prof. S. Rajumesh', role: 'Editor-in-Chief' },
-      managing: { name: 'Mr. K. Kajenthiran', role: 'Managing Editor' },
+      managing: [{ name: 'Mr. K. Kajenthiran', role: 'Managing Editor' },{ name: 'Ms. Grace Hyacinth Hensman', role: 'Managing Editor' }],
       associate: [
         { name: 'Dr. (Ms). S. Anandasayanan' },
         { name: 'Dr. (Ms). D. Sangarathas' },
@@ -109,7 +109,7 @@ const Committees = () => {
             </h3>
             <div className="space-y-8">
               {/* Editor-in-Chief and Managing Editor */}
-              <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+              <div className="grid md:grid-cols-3 gap-6 max-w-8xl mx-auto">
                 <div className="p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md text-center">
                   <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                     {committees.editorial.chief.name}
@@ -118,14 +118,16 @@ const Committees = () => {
                     {committees.editorial.chief.role}
                   </p>
                 </div>
-                <div className="p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md text-center">
-                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                    {committees.editorial.managing.name}
-                  </h4>
-                  <p className="text-green-600 dark:text-green-400 font-medium">
-                    {committees.editorial.managing.role}
-                  </p>
-                </div>
+                {committees.editorial.managing.map((member, index) => (
+                  <div key={index} className="p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md text-center">
+                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                      {member.name}
+                    </h4>
+                    <p className="text-green-600 dark:text-green-400 font-medium">
+                      {member.role}
+                    </p>
+                  </div>  
+                  ))}
               </div>
 
               {/* Associate Editors */}
