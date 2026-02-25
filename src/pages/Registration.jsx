@@ -119,14 +119,6 @@ const Registration = () => {
               </li>
             </ul>
           </div>
-          <div className="text-center">
-            <a
-              href="#contact"
-              className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors"
-            >
-              Register Now
-            </a>
-          </div>
         </div>
       </div>
     </section>
